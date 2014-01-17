@@ -11,7 +11,7 @@ done
 echo
 echo "Necessary modules activated"
 
- without output
+# Start httpd on background without output
 /usr/sbin/httpd & > /dev/null
 
 echo
