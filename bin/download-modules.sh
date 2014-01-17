@@ -8,9 +8,12 @@ do
     slax activate $i
 done
 
+echo
 echo "Necessary modules activated"
 
-/usr/sbin/httpd &
+# without output
+/usr/sbin/httpd & > /dev/null
 
+echo
 echo "httpd started in Slax"
 
