@@ -1,4 +1,9 @@
-slax-jbox-module
+Slax Jbox module
 ================
 
-Module for Slax (httpd, php, web xicht)
+2014-01-17 initial commit
+
+Base idea:
+   Run usb Slax. Run scrit that adds modules:
+        httpd php
+        webxicht
