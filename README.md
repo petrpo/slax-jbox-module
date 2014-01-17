@@ -14,6 +14,4 @@ Base idea:
 
 Run usb Slax. Run scrit that adds modules:
 
-httpd php
-
-Than add webxicht
+httpd php and dependencies than webxicht which can be accessed via browser

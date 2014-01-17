@@ -8,7 +8,5 @@ do
     slax activate $i
 done
 
-#slax download php httpd
-#slax activate php httpd
 
 
