@@ -1,6 +1,6 @@
 #!/bin/sh
 
-MODULES="php httpd"
+MODULES="arp apr-util httpd php"
 for i in $MODULES
 do
     printf "$i : "
