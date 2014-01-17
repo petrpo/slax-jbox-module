@@ -10,12 +10,3 @@ done
 
 echo
 echo "Necessary modules activated"
-
-# Start httpd on background without output
-/usr/sbin/httpd & > /dev/null
-
-echo
-echo "httpd started in Slax"
-
-
-

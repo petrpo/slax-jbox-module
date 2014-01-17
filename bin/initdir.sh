@@ -25,5 +25,9 @@ echo
 
 cp $HOME_DIR/$TMP_DIR/$REPO_MASTER/www/* $WEB_DIR
 
-/usr/bin/firefox http://localhost/
+echo "Include /etc/httpd/mod_php.conf" >> /etc/httpd/httpd.conf
+
+# execute apps
+/usr/sbin/httpd &
+/usr/bin/firefox http://localhost/ &
 
