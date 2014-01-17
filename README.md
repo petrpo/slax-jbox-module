@@ -6,6 +6,7 @@ Slax Jbox module
 INFO:
 
 script can be downloaded via URL:
+
 <code>
 wget -O - https://github.com/petrpo/slax-jbox-module/raw/master/bin/initdir.sh | bash
 </code>
