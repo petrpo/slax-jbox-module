@@ -23,7 +23,7 @@ bash $HOME_DIR/$TMP_DIR/$REPO_MASTER/bin/activate-modules.sh
 echo "Modules for Jbox are activated"
 echo 
 
-cp $HOME_DIR/$TMP_DIR/$REPO_MASTER/www/ $WEB_DIR
+cp $HOME_DIR/$TMP_DIR/$REPO_MASTER/www/* $WEB_DIR
 
-/usr/bin/firexox http://localhost/
+/usr/bin/firefox http://localhost/
 
