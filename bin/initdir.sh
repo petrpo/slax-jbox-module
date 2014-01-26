@@ -29,6 +29,8 @@ cp $HOME_DIR/$TMP_DIR/$REPO_MASTER/www/* $WEB_DIR
 echo "Include /etc/httpd/mod_php.conf" >> /etc/httpd/httpd.conf
 echo
 
+
+
 mysqladmin -u root password $MYSQL_ROOT
 echo "Mysql root password created: $MYSQL_ROOT"
 
