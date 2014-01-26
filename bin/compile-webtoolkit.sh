@@ -7,6 +7,7 @@ URL="http://kent.dl.sourceforge.net/project/witty/wt/3.3.1/"
 # download dependencies to compile wt
 slax activate icu4c
 slax activate boost
+slax activate cmake
 slax buildscript download template
 
 wget $URL$SRC_FILE.tar.gz
