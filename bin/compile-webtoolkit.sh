@@ -11,7 +11,7 @@ slax buildscript download template
 
 wget $URL$SRC_FILE
 tar -xvzpf $SRC_FILE
-cd $SRC_FILE
+cd `echo $SRC_FILE | awk -F.tar.gz '{print $1}'`
 mkdir build
 cd build
 cmake ..
