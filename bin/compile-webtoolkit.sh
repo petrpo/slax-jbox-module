@@ -10,7 +10,7 @@ slax activate boost
 slax buildscript download template
 
 wget $URL$SRC_FILE.tar.gz
-tar -xvzpf $SRC_FILE
+tar -xvzpf $SRC_FILE.tar.gz
 cd $SRC_FILE
 mkdir build
 cd build
