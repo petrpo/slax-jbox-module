@@ -11,5 +11,5 @@ Basic idea:
 
 Run Slax on USB.
 
-Script gets modules tu run hppt server, php, mysql and firefox on http://localhost/
+Script gets modules tu run http server, php, mysql and firefox on http://localhost/
 
