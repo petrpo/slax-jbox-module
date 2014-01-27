@@ -15,4 +15,20 @@ tar -xvzpf $SRC_FILE.tar.gz
 cd $SRC_FILE
 mkdir build
 cd build
-cmake ..
+
+cmake -D DEPLOYROOT=/var/www/wt \
+    -D WEBUSER=apache \
+    -D BUILD_SHARED_LIBS=ON \
+    -D CONFIGURATION=/etc/wt \
+    -D BOOST_COMPILER=gcc \
+    -D BOOST_VERSION=1_34_1 \
+    -D BOOST_DIR=/usr \
+    -D RUNDIR=/var/run \
+    -D CMAKE_INSTALL_PREFIX=/usr \
+    -D HTTP_WITH_SSL=true \
+    -D CONNECTOR_FCGI=true \
+    -D EXAMPLES_CONNECTOR=wthttp \
+    -D WEBGROUP=users \
+    ../
+
+
