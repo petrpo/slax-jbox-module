@@ -21,7 +21,6 @@ cmake -D DEPLOYROOT=/var/www/wt \
     -D BUILD_SHARED_LIBS=ON \
     -D CONFIGURATION=/etc/wt \
     -D BOOST_COMPILER=gcc \
-    -D BOOST_VERSION=1_34_1 \
     -D BOOST_DIR=/usr \
     -D RUNDIR=/var/run \
     -D CMAKE_INSTALL_PREFIX=/usr \
