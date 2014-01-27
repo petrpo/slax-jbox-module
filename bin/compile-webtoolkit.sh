@@ -10,7 +10,16 @@ slax activate boost
 slax activate cmake
 slax buildscript download template
 
-wget $URL$SRC_FILE.tar.gz
+#############################################
+# If file is here We will not download it   #
+#############################################
+if [ -f $URL$SRC_FILE.tar.gz ]
+then
+        echo "I am downloading $URL$SRC_FILE.tar.gz"
+        wget $URL$SRC_FILE.tar.gz
+fi
+
+echo "Untar a file"
 tar -xvzpf $SRC_FILE.tar.gz
 cd $SRC_FILE
 mkdir build
@@ -29,5 +38,8 @@ cmake -D DEPLOYROOT=/var/www/wt \
     -D EXAMPLES_CONNECTOR=wthttp \
     -D WEBGROUP=users \
     ../
+
+make
+make -C examples
 
 
