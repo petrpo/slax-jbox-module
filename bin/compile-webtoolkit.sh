@@ -3,6 +3,7 @@
 
 SRC_FILE="wt-3.3.1"
 URL="http://kent.dl.sourceforge.net/project/witty/wt/3.3.1/"
+PARA="-j4"
 
 # download dependencies to compile wt
 slax activate icu4c
@@ -39,7 +40,6 @@ cmake -D DEPLOYROOT=/var/www/wt \
     -D WEBGROUP=users \
     ../
 
-make
-make -C examples
-
+make $PARA
+make $PARA -C examples
 
