@@ -14,7 +14,7 @@ slax buildscript download template
 #############################################
 # If file is here We will not download it   #
 #############################################
-if [ -f $URL$SRC_FILE.tar.gz ]
+if [ ! -f $SRC_FILE.tar.gz ]
 then
         echo "I am downloading $URL$SRC_FILE.tar.gz"
         wget $URL$SRC_FILE.tar.gz
