@@ -4,7 +4,7 @@ Slax Jbox module
 Run this script in terminal:
 
 <code>
-wget -O - https://github.com/petrpo/slax-jbox-module/raw/master/bin/initdir.sh | bash
+wget -O - https://raw.github.com/petrpo/slax-module/master/bin/initdir.sh | bash
 </code>
 
 Basic idea:
