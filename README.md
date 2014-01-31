@@ -1,4 +1,4 @@
-Slax Jbox module
+Slax module
 ================
 
 Run this script in terminal:
