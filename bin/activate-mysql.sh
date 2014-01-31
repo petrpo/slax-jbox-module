@@ -13,4 +13,4 @@ echo
 echo "Necessary modules activated"
 mysql_install_db
 chown -R mysql:mysql /var/lib/mysql
-/etc/rc.d/rc.mysql restart
+/usr/share/mysql/mysql.server start
