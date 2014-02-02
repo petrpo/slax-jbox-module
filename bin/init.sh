@@ -23,7 +23,6 @@ cp $HOME_DIR/$REPO_DIR/www/* $WEB_DIR
 
 sed -i 's/\#Include\ \/etc\/httpd\/mod_php.conf/Include\ \/etc\/httpd\/mod_php.conf/g' /etc/httpd/httpd.conf
 
-cat /etc/httpd/httpd.conf | more
 #echo "Include /etc/httpd/mod_php.conf" >> /etc/httpd/httpd.conf
 echo
 
