@@ -4,7 +4,7 @@ Slax module
 Run this script in terminal:
 
 <code>
-wget -O - https://raw.github.com/petrpo/slax-module/master/bin/initdir.sh | bash
+wget -O - https://raw.github.com/petrpo/slax-module/master/bin/init.sh | bash
 </code>
 
 Basic idea:
