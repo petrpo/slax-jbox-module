@@ -1,8 +1,7 @@
 Slax module
 ================
 
-Run this script in terminal:
-
+For activation of Apache with php run this script in terminal:
 <code>
 wget -O - https://raw.github.com/petrpo/slax-module/master/bin/init.sh | bash
 </code>
