@@ -19,9 +19,12 @@ bash $HOME_DIR/$REPO_DIR/bin/activate-apache-php.sh
 echo "Modules for Jbox are activated"
 echo 
 
-cp $HOME_DIR/$TMP_DIR/$REPO_MASTER/www/* $WEB_DIR
+cp $HOME_DIR/$REPO_DIR/www/* $WEB_DIR
 
-echo "Include /etc/httpd/mod_php.conf" >> /etc/httpd/httpd.conf
+sed 's/\#Include\ \/etc\/httpd\/mod_php.conf/Include\ \/etc\/httpd\/mod_php.conf/g' /etc/httpd/httpd.conf
+
+cat /etc/httpd/httpd.conf | more
+#echo "Include /etc/httpd/mod_php.conf" >> /etc/httpd/httpd.conf
 echo
 
 mysqladmin -u root password $MYSQL_ROOT
@@ -32,3 +35,4 @@ echo "Mysql root password created: $MYSQL_ROOT"
 sleep 2
 /usr/bin/firefox http://localhost/ &
 
+sed -i 's/\#Include\ \/etc\/httpd\/mod_php.conf/Include\ \/etc\/httpd\/mod_php.conf/g' /etc/httpd/httpd.conf 
