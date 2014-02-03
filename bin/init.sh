@@ -8,7 +8,7 @@ HOME_DIR="`pwd`"
 GITHUB="https://github.com/petrpo"
 REPO="slax-module.git"
 REPO_DIR="slax-module"
-ROOT_MYSQL="toor"
+MYSQL_ROOT="toor"
 
 slax activate git
 git clone https://github.com/petrpo/slax-module.git
