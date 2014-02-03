@@ -11,7 +11,7 @@
 
 <?php
 
-$APA_VER=shell_exec("apache -v | grep version");
+$APA_VER=shell_exec("apachectl -v | grep version");
 $PHP_VER=shell_exec("php -v | grep buil");
 $MYS_VER=shell_exec("mysql -V");
 
