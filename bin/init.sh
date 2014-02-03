@@ -27,15 +27,15 @@ sed -i 's/\#Include\ \/etc\/httpd\/mod_php.conf/Include\ \/etc\/httpd\/mod_php.c
 echo
 
 # activate mysql
-bash $HOME_DIR/$REPO_DIR/bin/activate-mysql.sh
+bash $HOME_DIR/$REPO_DIR/bin/activate-mysql.sh > /dev/null
 
-mysqladmin -u root password $MYSQL_ROOT
+mysqladmin -u root password $MYSQL_ROOT > /dev/null
 echo "Mysql root password created: $MYSQL_ROOT"
 
-echo "Now we have this:"
-echo "`apachectl -v | grep version`"
-echo "`php -v | grep buil`"
-echo "`mysql -V`"
+#echo "Now we have this:"
+#echo "`apachectl -v | grep version`"
+#echo "`php -v | grep buil`"
+#echo "`mysql -V`"
 
 sleep 5
 
@@ -43,4 +43,10 @@ sleep 5
 /usr/sbin/httpd &
 sleep 2
 /usr/bin/firefox http://localhost/ &
+
+echo "Now we have this apps installed:"
+echo "`apachectl -v | grep version`"
+echo "`php -v | grep buil`"
+echo "`mysql -V`"
+
 
