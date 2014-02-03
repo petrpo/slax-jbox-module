@@ -23,8 +23,7 @@ cp $HOME_DIR/$REPO_DIR/www/* $WEB_DIR
 
 sed -i 's/\#Include\ \/etc\/httpd\/mod_php.conf/Include\ \/etc\/httpd\/mod_php.conf/g' /etc/httpd/httpd.conf
 
-#echo "Include /etc/httpd/mod_php.conf" >> /etc/httpd/httpd.conf
-echo
+echo "AddHandler aplication/x-httpd-php .html -html" >> /etc/httpd/mod_php.conf
 
 # activate mysql
 bash $HOME_DIR/$REPO_DIR/bin/activate-mysql.sh > /dev/null
