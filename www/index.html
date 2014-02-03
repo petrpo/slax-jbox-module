@@ -4,13 +4,28 @@
 
 <?php
 
-Echo "";
-Echo "PHP Hello World";
-Echo "";
-
 ?>
 <li><a href="http://localhost/">localhost<a/>
 <li><a href="http://localhost/pi.php">php info</a>
 <li><a href="http://localhost/mysql.php">mysql info</a>
+
+<?php
+
+$APA_VER=shell_exec("apache -v | grep version");
+$PHP_VER=shell_exec("php -v | grep build");
+$MYS_VER=shell_exec("mysql -V");
+
+echo "";
+echo "$APA_VER";
+echo "PHP_VER";
+echo "MYS_VER";
+
+?>
+
+<!--echo "Now we have this apps installed:"
+echo "`apachectl -v | grep version`"
+echo "`php -v | grep buil`"
+echo "`mysql -V`"
+-->
 
 </body></html>
