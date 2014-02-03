@@ -12,20 +12,15 @@
 <?php
 
 $APA_VER=shell_exec("apache -v | grep version");
-$PHP_VER=shell_exec("php -v | grep build");
+$PHP_VER=shell_exec("php -v | grep buil");
 $MYS_VER=shell_exec("mysql -V");
 
-echo "";
-echo "$APA_VER";
-echo "PHP_VER";
-echo "MYS_VER";
+echo "<br>";
+echo "<br>";
+echo "$APA_VER<br>";
+echo "$PHP_VER<br>";
+echo "$MYS_VER<br>";
 
 ?>
-
-<!--echo "Now we have this apps installed:"
-echo "`apachectl -v | grep version`"
-echo "`php -v | grep buil`"
-echo "`mysql -V`"
--->
 
 </body></html>
