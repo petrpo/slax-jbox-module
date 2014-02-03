@@ -32,6 +32,13 @@ bash $HOME_DIR/$REPO_DIR/bin/activate-mysql.sh
 mysqladmin -u root password $MYSQL_ROOT
 echo "Mysql root password created: $MYSQL_ROOT"
 
+echo "Now we have this:"
+echo "`apachectl -v | grep version`"
+echo "`php -v | grep buil`"
+echo "`mysql -V`"
+
+sleep 5
+
 # execute apps
 /usr/sbin/httpd &
 sleep 2
