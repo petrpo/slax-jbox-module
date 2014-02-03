@@ -1,12 +1,7 @@
 <?php
 
-mysql_connect("localhost","root","toor");
-    $array = explode(" ",mysql_stat());
-    
-    echo "mysql uptime<br /><br />";
+$UP=shell_exec("mysql -u root -ptoor -e STATUS | grep Uptime | sed 's/Uptime/Mysql\ uptime/'");
 
-    foreach ($array as value) {
-        echo $value . "<br />";
-    }
+echo "$UP";
 ?>
 
