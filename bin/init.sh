@@ -19,7 +19,7 @@ bash $HOME_DIR/$REPO_DIR/bin/activate-apache-php.sh
 echo "Modules for Jbox are activated"
 echo 
 
-cp $HOME_DIR/$REPO_DIR/www/* $WEB_DIR
+cp -r $HOME_DIR/$REPO_DIR/www/* $WEB_DIR
 
 sed -i 's/\#Include\ \/etc\/httpd\/mod_php.conf/Include\ \/etc\/httpd\/mod_php.conf/g' /etc/httpd/httpd.conf
 
