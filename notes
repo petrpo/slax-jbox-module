@@ -1,0 +1,9 @@
+# change in httpd.conf with sed
+
+Options Indexes -> Options -Indexes
+
+# Add line
+ServerName 127.0.0.1
+
+# uncomment line
+#Include /etc/httpd/httpd.conf

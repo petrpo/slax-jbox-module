@@ -11,3 +11,6 @@ Basic idea:
 Run Slax on USB.
 
 Script sctivates modules tu run http server, php, mysql and firefox on http://localhost/
+
+# Script for module activation is not neccesary. It can be done as depended modules. It load automaticaly
+
