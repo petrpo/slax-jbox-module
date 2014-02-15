@@ -1,4 +1,4 @@
-Slax module
+Bakulka.sb (Slax module)
 ================
 
 For activation of Apache with php run this script in terminal:
