@@ -1,4 +1,4 @@
-Bakulka.sb (Slax module)
+Bakulka.sb (Slax module) - not longer maintained. Slax is based on Debian now
 ================
 
 For activation of Apache with php run this script in terminal:
